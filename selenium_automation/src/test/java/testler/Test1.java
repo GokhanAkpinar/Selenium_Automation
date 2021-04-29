@@ -52,25 +52,25 @@ public class Test1 {
 
         driver.get("https://www.gittigidiyor.com/sepetim ");
 
-        /*
+        
 
-        fiyat karşılaştırma
+       /* fiyat karşılaştırma */
 
         WebElement sepetFiyat = driver.findElement(By.className("new-price"));
         String fiyat1 = sepetFiyat.getText();
         if (fiyat2.compareTo(fiyat1) > 0){
 
 
-            Adet yükseltme
+           /* Adet yükseltme */
 
             WebElement adetsayi = driver.findElement(By.id("469489995"));
             adetsayi.click();
             adetsayi.clear();
             adetsayi.sendKeys("2");
 
-        }*/
+        }
 
-        /* sepeti boşaltma*/
+         /* sepeti boşaltma */
         driver.findElement(By.className("gg-icon-bin-medium")).click();
 
     }
